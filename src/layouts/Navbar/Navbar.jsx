@@ -1,6 +1,6 @@
 /* eslint-disable no-constant-condition */
 import { useEffect, useRef, useState } from "react";
-import BurgerBtn from "./BurgerBtn";
+import BurgerBtn from "./BurgerBtn/BurgerBtn";
 import Logo from "../Logo";
 import { Button } from "../../Components/UI/all";
 import { NavLink } from "react-router-dom";

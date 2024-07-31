@@ -35,10 +35,14 @@ export default function Home() {
         </div>
       </Card>
       {/* <Card className="bg-transparent shadow-none"> */}
-      <div className="container mx-auto md:px-10">
-        <LastPart />
+      <Card className="bg-transparent shadow-none">
+        <div className="container mx-auto md:px-10">
+          <LastPart />
+        </div>
+      </Card>
+      <div className="mt-20">
+        <Footer />
       </div>
-      <Footer />
       {/* </Card> */}
     </div>
   );
