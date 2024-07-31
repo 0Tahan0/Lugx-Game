@@ -22,6 +22,17 @@ import trending_2 from "../assets/images/trending-02.jpg";
 import trending_3 from "../assets/images/trending-03.jpg";
 import trending_4 from "../assets/images/trending-04.jpg";
 // ==========================================
+import game_1 from "../assets/images/categories-01.jpg";
+import game_2 from "../assets/images/categories-02.jpg";
+import game_3 from "../assets/images/categories-04.jpg";
+import game_4 from "../assets/images/top-game-02.jpg";
+import game_5 from "../assets/images/top-game-03.jpg";
+import game_6 from "../assets/images/top-game-04.jpg";
+import game_7 from "../assets/images/top-game-05.jpg";
+import game_8 from "../assets/images/top-game-06.jpg";
+import game_9 from "../assets/images/trending-01.jpg";
+import game_10 from "../assets/images/trending-02.jpg";
+import game_11 from "../assets/images/trending-04.jpg";
 const data = {
   feauters: [
     { id: 1, image: featured_1, title: "free storage" },
@@ -42,15 +53,15 @@ const data = {
       image: trending_1,
       action: "Action",
       title: "Assasin Creed",
-      price: '50$',
-      discount: '50%',
+      price: "50$",
+      discount: "50%",
     },
     {
       id: 2,
       image: trending_2,
       action: "Action",
       title: "Assasin Creed",
-      price: '44$',
+      price: "44$",
       discount: "0%",
     },
     {
@@ -58,7 +69,7 @@ const data = {
       image: trending_3,
       action: "Action",
       title: "Assasin Creed",
-      price: '64$',
+      price: "64$",
       discount: "31%",
     },
     {
@@ -66,7 +77,7 @@ const data = {
       image: trending_4,
       action: "Action",
       title: "Assasin Creed",
-      price: '32$',
+      price: "32$",
       discount: "0%",
     },
   ],
@@ -78,6 +89,107 @@ const data = {
     { id: 5, image: topGame_5, adventure: "Adventure", title: "Assasin Creed" },
     { id: 6, image: topGame_6, adventure: "Adventure", title: "Assasin Creed" },
   ],
+  games: [
+    {
+      id: 1,
+      image: game_1,
+      title: "assasin creed",
+      action: "action",
+      price: "40$",
+      discount: "25%",
+      type: ["adventure", "racing"],
+    },
+    {
+      id: 2,
+      image: game_2,
+      title: "assasin creed",
+      action: "action",
+      price: "50$",
+      discount: "10%",
+      type: ["adventure", "strategy"],
+    },
+    {
+      id: 3,
+      image: game_3,
+      title: "assasin creed",
+      action: "action",
+      price: "30$",
+      discount: "0%",
+      type: ["strategy"],
+    },
+    {
+      id: 4,
+      image: game_4,
+      title: "assasin creed",
+      action: "action",
+      price: "120$",
+      discount: "40%",
+      type: ["strategy"],
+    },
+    {
+      id: 5,
+      image: game_5,
+      title: "assasin creed",
+      action: "action",
+      price: "77$",
+      discount: "60%",
+      type: ["strategy", "racing"],
+    },
+    {
+      id: 6,
+      image: game_6,
+      title: "assasin creed",
+      action: "action",
+      price: "35$",
+      discount: "0%",
+      type: ["racing"],
+    },
+    {
+      id: 7,
+      image: game_7,
+      title: "assasin creed",
+      action: "action",
+      price: "22$",
+      discount: "0%",
+      type: ["strategy"],
+    },
+    {
+      id: 8,
+      image: game_8,
+      title: "assasin creed",
+      action: "action",
+      price: "44$",
+      discount: "15%",
+      type: ["adventure"],
+    },
+    {
+      id: 9,
+      image: game_9,
+      title: "assasin creed",
+      action: "action",
+      price: "53$",
+      discount: "20%",
+      type: ["adventure", "strategy"],
+    },
+    {
+      id: 10,
+      image: game_10,
+      title: "assasin creed",
+      action: "action",
+      price: "25$",
+      discount: "0%",
+      type: ["adventure"],
+    },
+    {
+      id: 11,
+      image: game_11,
+      title: "assasin creed",
+      action: "action",
+      price: "52$",
+      discount: "33%",
+      type: ["strategy", "racing"],
+    },
+  ],
 };
 
-export const { feauters, categories, topGames, trending } = data;
+export const { feauters, categories, topGames, trending, games } = data;

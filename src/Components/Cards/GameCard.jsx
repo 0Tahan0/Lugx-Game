@@ -16,13 +16,15 @@ export default function GameCard(props) {
   return (
     <Link
       to="/product details"
-      className="rounded-3xl bg-gray-200 relative shadow-md group select-none h-fit"
+      className="rounded-3xl bg-gray-200 relative shadow-md group select-none h-fit "
     >
-      <img
-        src={props.image}
-        alt={props.title}
-        className="w-full object-cover rounded-3xl h-2/3"
-      />
+      <div className="lg:max-h-56 overflow-hidden grid place-items-center rounded-3xl">
+        <img
+          src={props.image}
+          alt={props.title}
+          className="w-full object-cover  h-full "
+        />
+      </div>
       <div className="absolute top-0 right-0  bg-lu-blue font-medium text-white rounded-md p-1 w-16 text-center -translate-x-1/3 translate-y-1/3">
         <p className={`${hasDiscount() ? "line-through text-sm" : ""}`}>
           {price.currency + price.oldPrice}

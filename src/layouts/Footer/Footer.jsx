@@ -4,7 +4,7 @@ import footerBg from "../../assets/images/footer-bg.jpg"
 export default function Footer(props) {
   return (
     <div
-      className="md:rounded-t-4xl rounded-t-3xl bg-cover bg-center pb-24 pt-5"
+      className="md:rounded-t-4xl rounded-t-3xl bg-cover bg-center pb-24 pt-5 mt-20"
       style={{ backgroundImage: `url(${footerBg})` }}
     >
       <Container>

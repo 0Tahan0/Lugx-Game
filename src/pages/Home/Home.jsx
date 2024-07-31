@@ -26,7 +26,7 @@ export default function Home() {
           <Trending />
         </Container>
       </Card>
-      <Card className="rounded-4xl ">
+      <Card className="md:rounded-4xl ">
         <Container>
           <TopGames />
         </Container>
@@ -36,14 +36,12 @@ export default function Home() {
           <TopCategories />
         </Container>
       </Card>
-      <Card className="bg-transparent shadow-none">
+      <div className="">
         <Container>
           <LastPart />
         </Container>
-      </Card>
-      <div className="mt-20">
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }
