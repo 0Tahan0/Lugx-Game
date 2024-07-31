@@ -5,6 +5,7 @@ import Logo from "../Logo";
 import { Button } from "../../Components/UI/all";
 import { NavLink } from "react-router-dom";
 import Tap from "./Tap";
+import Container from "../../Components/Container";
 export default function Navbar(props) {
   const [scrollY, setScrollY] = useState(window.scrollY);
   const [logoBoxClasses, setLogoBoxClasses] = useState();
@@ -87,7 +88,7 @@ export default function Navbar(props) {
         ref={nav}
         className={`transition-all h-fit top-0 left-0 rounded-b-3xl z-50 select-none duration-500 ${scrollingNavClasses} ${props.className} `}
       >
-        <div className="container mx-auto md:px-10 flex items-center py-3  justify-between relative ">
+        <Container className=" flex items-center py-3  justify-between relative ">
           <NavLink to="/" className={logoBoxClasses + " " + "outline-none"}>
             <Logo />
           </NavLink>
@@ -114,7 +115,7 @@ export default function Navbar(props) {
             }
             {tapsInSmallScreen()}
           </div>
-        </div>
+        </Container>
       </div>
     </>
   );

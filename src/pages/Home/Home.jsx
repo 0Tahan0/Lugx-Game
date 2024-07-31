@@ -1,49 +1,49 @@
 import Heading from "../../layouts/Heading";
-import Landing from "./Landing";
-import Feauters from "./Feauters";
-import Trending from "./Trending";
-import TopGames from "./TopGames";
 import { Card } from "../../Components/UI/all";
-import TopCategories from "./TopCategories";
-import LastPart from "./LastPart";
 import Footer from "../../layouts/Footer/Footer";
-// import Section from "../../Components/Cards/Section";
+import {
+  Feauters,
+  Landing,
+  LastPart,
+  TopCategories,
+  TopGames,
+  Trending,
+} from "./homeComponents";
+import Container from "../../Components/Container";
 export default function Home() {
   return (
     <div>
       <Heading>
-        <div className="container mx-auto md:px-10  h-full mt-20 pb-20">
+        <Container className="h-full mt-20 pb-20">
           <Landing />
-        </div>
+        </Container>
       </Heading>
-      <div className="container mx-auto md:px-10 -mt-20  ">
+      <Container className=" -mt-20  ">
         <Feauters />
-      </div>
+      </Container>
       <Card className="bg-transparent shadow-none">
-        <div className="container mx-auto md:px-10">
+        <Container>
           <Trending />
-        </div>
+        </Container>
       </Card>
       <Card className="rounded-4xl ">
-        <div className="container mx-auto md:px-10">
+        <Container>
           <TopGames />
-        </div>
+        </Container>
       </Card>
       <Card className="bg-transparent shadow-none">
-        <div className="container mx-auto md:px-10 ">
+        <Container>
           <TopCategories />
-        </div>
+        </Container>
       </Card>
-      {/* <Card className="bg-transparent shadow-none"> */}
       <Card className="bg-transparent shadow-none">
-        <div className="container mx-auto md:px-10">
+        <Container>
           <LastPart />
-        </div>
+        </Container>
       </Card>
       <div className="mt-20">
         <Footer />
       </div>
-      {/* </Card> */}
     </div>
   );
 }
