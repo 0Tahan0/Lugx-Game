@@ -1,6 +1,6 @@
 import { topGames } from "../../Data";
 import TopGameCard from "../../Components/Cards/TopGameCard";
-import Section from "../../Components/Cards/Section";
+import Section from "../../Components/Section";
 
 export default function TopGames() {
   return (

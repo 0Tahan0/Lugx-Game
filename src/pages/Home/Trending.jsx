@@ -1,4 +1,4 @@
-import Section from "../../Components/Cards/Section";
+import Section from "../../Components/Section";
 import GameCard from "../../Components/Cards/GameCard";
 
 import { trending } from "../../Data";

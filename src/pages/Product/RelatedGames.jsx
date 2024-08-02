@@ -3,9 +3,14 @@ import TopCategorieCard from "../../Components/Cards/TopCategorieCard";
 // { id: 1, image: categories_1, action: "Action" },
 import Section from "../../Components/Section";
 
-export default function TopCategories() {
+export default function RelatedGames() {
   return (
-    <Section smallTitle="Categories" title="Top Categories" centerTitles>
+    <Section
+      smallTitle="Action"
+      title="Related Games"
+      btn="view all"
+      onClick={() => alert("hellooooo")}
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
         {categories.map((game) => (
           <TopCategorieCard

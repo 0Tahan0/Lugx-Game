@@ -39,7 +39,7 @@ export default function GameCard(props) {
           </p>
         </div>
         <span className="transition-all duration-300  text-white rounded-full grid place-items-center bg-lu-red w-12  h-12 group-hover:bg-lu-blue">
-          <FontAwesomeIcon icon="fa-solid fa-shopping-bag " size="lg" />
+          <FontAwesomeIcon icon="fa-solid fa-shopping-bag" size="lg"  />
         </span>
       </div>
     </Link>
