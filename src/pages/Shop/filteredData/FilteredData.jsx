@@ -1,6 +1,5 @@
 import GameCard from "../../../Components/Cards/GameCard";
 
-
 import { games } from "../../../Data";
 import ContoleButtons from "./ContoleButtons";
 import FiltersButtons from "./FiltersButtons";
@@ -13,9 +12,9 @@ export default function FilteredData() {
     { text: "Racing", value: "racing" },
   ];
   const [selectedFilter, setSelectedFilter] = useState("all");
-
+  const [sectionNumber, setSectionNumber] = useState(3);
   return (
-    <div>
+    <div className="grid gap-20">
       <FiltersButtons
         filters={filters}
         filtering={(value) => setSelectedFilter(value)}
@@ -37,7 +36,12 @@ export default function FilteredData() {
             />
           ))}
       </div>
-      <ContoleButtons count="5" />
+      <ContoleButtons
+        count="10"
+        show="3"
+        currentNumber={sectionNumber}
+        onClick={(value) => setSectionNumber(value)}
+      />
     </div>
   );
 }
