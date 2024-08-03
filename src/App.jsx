@@ -1,7 +1,6 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProductDetails from "./pages/Product/ProductDetails";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Contact/Contact";
 import Shop from "./pages/Shop/Shop";
 import Home from "./pages/Home/Home";
 function App() {

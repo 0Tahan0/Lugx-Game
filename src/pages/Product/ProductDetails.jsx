@@ -48,7 +48,6 @@ export default function ProductDetails() {
       </Container>
       <Container className="mt-20">
         <RelatedGames />
-
       </Container>
       <Footer />
     </div>
