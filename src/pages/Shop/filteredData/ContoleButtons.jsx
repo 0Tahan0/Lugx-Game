@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function ContoleButtons(props) {
   const stepsArray = Object.keys([...Array(Number(props.count))]).map((e) =>
@@ -26,7 +27,7 @@ export default function ContoleButtons(props) {
           onClick={() => prev()}
           className="rounded-full w-12 h-12 shadow-md grid place-items-center font-bold hover:bg-lu-blue hover:text-white transition-all duration-300"
         >
-          <i className="fa-solid fa-angle-left" />
+          <FontAwesomeIcon icon="fa-solid fa-angle-left" />
         </button>
       );
     return "";
@@ -38,7 +39,7 @@ export default function ContoleButtons(props) {
           onClick={() => next()}
           className="rounded-full w-12 h-12 shadow-md grid place-items-center font-bold hover:bg-lu-blue hover:text-white transition-all duration-300"
         >
-          <i className="fa-solid fa-angle-right" />
+          <FontAwesomeIcon icon="fa-solid fa-angle-right" />
         </button>
       );
     return "";

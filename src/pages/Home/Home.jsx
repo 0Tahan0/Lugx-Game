@@ -21,26 +21,27 @@ export default function Home() {
       <Container className=" -mt-20  ">
         <Feauters />
       </Container>
-      <Card className="bg-transparent shadow-none">
+      <div className="mt-20">
         <Container>
           <Trending />
         </Container>
-      </Card>
+      </div>
       <Card className="md:rounded-4xl ">
         <Container>
           <TopGames />
         </Container>
       </Card>
-      <Card className="bg-transparent shadow-none">
+      <div className="mt-20">
         <Container>
           <TopCategories />
         </Container>
-      </Card>
-      <div className="">
+      </div>
+      <div className="mt-20">
         <Container>
           <LastPart />
         </Container>
       </div>
+
       <Footer />
     </div>
   );

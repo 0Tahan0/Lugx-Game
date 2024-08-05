@@ -5,8 +5,8 @@ export default function LastPart() {
   const [focusedInput, setFocusedInput] = useState();
   return (
     <div
-      className="lg:flex-row flex-col flex  lg:-space-x-20, gap-5    justify-between relative select-none"
-      style={{ minHeight: "600px" }}
+      className="lg:flex grid lg:-space-x-20, gap-5  h-fit   lg:justify-between relative select-none lg:h-600"
+      
     >
       <div className="bg-lu-light-gray p-8 md:p-16 rounded-3xl h-fit lg:w-2/5 lg:self-center">
         <p className="text-lu-red uppercase font-bold text-sm">our shop</p>
@@ -27,7 +27,7 @@ export default function LastPart() {
       <div className=" absolute top-0 left-1/2 -translate-x-1/2   rounded-3xl   overflow-hidden shadow-md -z-10 hidden lg:block ">
         <img src={cta} alt="cta" className="object-cover h-full w-full" />
       </div>
-      <div className="bg-lu-light-gray p-8 md:p-16 rounded-3xl h-fit  lg:w-2/5 lg:self-end">
+      <div className="bg-lu-light-gray p-8  md:p-16 rounded-3xl  h-fit lg:w-2/5 lg:self-end">
         <p className="text-lu-red uppercase font-bold ">NEWSLETTER</p>
         <p className="md:text-4xl text-lg text-lu-dark-blue mt-4 font-bold">
           Get Up To $100 Off Just Buy
